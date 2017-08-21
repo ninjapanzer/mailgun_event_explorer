@@ -13,9 +13,9 @@ class Event extends React.Component {
           domain:<strong>{event["recipient-domain"]}</strong> |
           id: <strong>{event.id}</strong>
         </div>
-        <div>Message: <span style={{color: "#C41A16"}}>{event["delivery-status"].message}</span> </div>
-        <div>Target: {event.envelope.targets}</div>
-        <div>Subject: {event.message.headers.subject}</div>
+        <div>Message: <span style={{color: "#C41A16"}}>{(event["delivery-status"] || {message: ""}).message}</span> </div>
+        <div>Target: {(event.envelope || {targets: ""}).targets}</div>
+        <div>Subject: {(event.message || {headers: {subject: ""}}).headers.subject}</div>
         <div>Date: {Moment.unix(event.timestamp).local().toDate().toString()}</div>
       </div>
     )
