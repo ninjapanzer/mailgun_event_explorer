@@ -14,13 +14,13 @@ There are two reasons for this project:
 * Webpack 3.5+
 
 #### Setup
-1. Fork/Clone
-2. $`cp .env.sample .env`
-3. Set your Mailgun api in .env
-4. npn/yarn install
-5. $`webpack`
-6. $`phalcon serve`
-7. $`open http://localhost:8000`
+1. Fork/Clone/Download
+2. Copy or rename the `.env` file  from `.env.sample` to `.env` eg.$`cp .env.sample .env`
+3. Set your Mailgun api in `.env`
+4. Install node modules `npm install` OR `yarn install`
+5. Compile ReactJS with $`webpack`
+6. Start up a local development server $`phalcon serve`
+7. Open the project in your browser $`open http://localhost:8000`
 
 #### About
 This project is in preparation for a series of tutorial videos combining Webpack and Phalcon for building application with rich clients.
