@@ -1,8 +1,8 @@
-### MailGun Event Explorer
+### Mailgun Event Explorer
 
-Beta MailGun API Event Log Reader
+Beta Mailgun API Event Log Reader
 
-For those situations when you have API access to MailGun but not access to the MailGun Console you can use this to walk the log history of `Rejected` and `Failed` events.
+For those situations when you have API access to Mailgun but not access to the Mailgun Console you can use this to walk the log history of `Rejected` and `Failed` events.
 There are two reasons for this project:
 - Mailgun pagination sucks for usability
 - Who wants to read JSON when you could use `CTRL-F`
